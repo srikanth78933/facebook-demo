@@ -1,7 +1,13 @@
-hello devops team
 pipeline {
     agent any
     stages {
-         stage {
+         stage ("git clone") {
               steps ""
+         }
+         stage ("Build") {
+              steps {
+                   sh ""
+              }
+         }
+
 
