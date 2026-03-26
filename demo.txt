@@ -1,1 +1,7 @@
 hello devops team
+pipeline {
+    agent any
+    stages {
+         stage {
+              steps ""
+
