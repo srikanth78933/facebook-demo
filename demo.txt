@@ -1,2 +1,10 @@
-pipeline {
-
+---
+- name: install java on ubuntu OS
+  hosts: localhost
+  become: true
+  tasks:
+     - name: install
+       apt:
+         - name: openjdk-jdk
+           state: present
+           update_cache: yes
